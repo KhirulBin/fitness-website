@@ -1,7 +1,157 @@
-body{
-    background-color: var(--primary-color);
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+/* font */
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
-:root{
-    --primary-color: #B9B9B9;
+body {
+  background-color: black;
+  font-family: inter;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* common-styles */
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #e6533c;
+  --bg-color-secondary: rgba(34, 34, 34, 1);
+  --paragraph-color-common: rgba(255, 255, 255, 0.5);
+}
+/* common-styles */
+
+/* header-section */
+
+/* nav-section */
+header {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 80px;
+  align-items: center;
+}
+
+.nav-logo {
+  color: var(--secondary-color);
+  font-style: italic;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.nav-list {
+  display: flex;
+  gap: 8px;
+  border: 1px solid white;
+  align-items: center;
+  border-radius: 46px;
+}
+
+.nav-item {
+  width: 92px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.home {
+  background-color: #e6533c;
+  border-radius: 48px;
+}
+/* nav-section */
+
+/* banner-section */
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner-header{
+    width: 70%;
+}
+
+.banner-tittle {
+  font-size: 72px;
+}
+
+.banner-description{
+    margin: 28px 0;
+    color: var(--paragraph-color-common);
+}
+
+.banner-btn{
+    display: flex;
+    gap: 14px;
+}
+
+.btn{
+    padding: 16px 40px;
+    background-color: var(--secondary-color);
+    border-radius: 42px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.banner-imgs{
+    position: relative;
+}
+
+.banner-img{
+}
+
+.stats{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats-container{
+}
+
+/* banner-section */
+
+/* media-query */
+
+/* small-device */
+@media screen and (max-width: 576px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 2px;
+    border: none;
+  }
+
+  .nav-item {
+    padding: 6px;
+  }
+}
+/* small-device */
+
+/* medium-device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nav-item {
+    padding: 8px;
+    width: 60px;
+    font-size: 16px;
+  }
+
+  .nav-list {
+    gap: 4px;
+  }
+}
+/* medium-device */
