@@ -4,6 +4,7 @@
 .inter {
   font-family: "Inter", sans-serif;
 }
+
 /* font */
 * {
   margin: 0;
@@ -31,6 +32,7 @@ a {
   --bg-color-secondary: rgba(34, 34, 34, 1);
   --paragraph-color-common: rgba(255, 255, 255, 0.5);
 }
+
 /* common-styles */
 
 /* header-section */
@@ -38,8 +40,9 @@ a {
 /* nav-section */
 header {
   margin-left: 8%;
-  margin-right: 8%;
+  margin-right: 8%
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -73,58 +76,342 @@ nav {
   background-color: #e6533c;
   border-radius: 48px;
 }
+
 /* nav-section */
 
 /* banner-section */
 .banner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  align-content: center;
 }
 
-.banner-header{
-    width: 70%;
+.banner-header {
+  width: 70%;
 }
 
 .banner-tittle {
   font-size: 72px;
 }
 
-.banner-description{
-    margin: 28px 0;
-    color: var(--paragraph-color-common);
+.banner-description {
+  margin: 28px 0;
+  color: var(--paragraph-color-common);
 }
 
-.banner-btn{
-    display: flex;
-    gap: 14px;
+.banner-btn {
+  display: flex;
+  gap: 12px;
 }
 
-.btn{
-    padding: 16px 40px;
-    background-color: var(--secondary-color);
-    border-radius: 42px;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
+.btn {
+  padding: 16px 36px;
+  background-color: var(--secondary-color);
+  border-radius: 42px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.banner-imgs{
-    position: relative;
+.banner-imgs {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.banner-img{
+.banner-img {}
+
+.stats {
+  position: absolute;
+  display: flex;
+  gap: 160px;
 }
 
-.stats{
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
+.stats-container {
+  padding: 12px 28px;
+  background-color: var(--paragraph-color-common);
+  border-radius: 12px;
+  width: 150px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.stats-container{
+.tutorial {
+  position: absolute;
+  top: 120px;
+  left: -280px;
+}
+
+.videos {
+  position: absolute;
+  top: -200px;
+  left: 50px
+}
+
+.stats-num {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stats-name {
+  font-size: 13px;
+  color: var(--paragraph-color-common);
+  font-weight: 400;
 }
 
 /* banner-section */
+
+/* main-section */
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 33px;
+}
+
+/* all-habit-section */
+
+.all-habit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.habit-header {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.habit-header-tittle {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.habit-header-description {
+  font-size: 14px;
+  color: var(--paragraph-color-common);
+}
+
+.habits {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.habit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+.habit-img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.habit-name {
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+.habits-description {
+  font-size: 14px;
+  color: var(--paragraph-color-common);
+}
+
+/* all-habit-section */
+
+/* run-section */
+.run-section {
+  gap: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: var(--bg-color-secondary);
+  border-radius: 18px;
+  margin: 100px 0;
+}
+
+.run-article {
+  width: 50%;
+  margin: auto 0;
+}
+
+.run-tittle {
+  font-size: 48px;
+  font-weight: black;
+}
+
+.run-description {
+  font-weight: 14px;
+  color: var(--paragraph-color-common);
+  margin-top: 14px;
+  margin-bottom: 34px;
+}
+
+.run-img {
+  width: 50%;
+  height: 100%;
+  border-radius: 18px;
+}
+
+/* run-section */
+
+/* Trainings and Exercises */
+.trainings-exercises-header {
+  margin-bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.trainings-exercises-tittle {
+  font-size: 48px;
+  font-weight: black;
+}
+
+.trainings-exercises-description {
+  font-size: 14px;
+  color: var(--paragraph-color-common);
+}
+
+.trainings-exercises-imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trainings-exercises-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* team-member */
+.team {
+  margin-bottom: 88px;
+}
+
+.team-member-header {
+  margin: 88px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+.team-members {
+  background-color: var(--bg-color-secondary);
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 20px;
+}
+
+.team-member {
+  position: relative;
+}
+
+.member-img {
+  width: 100%;
+  height: 100%;
+}
+
+.team-member-details {
+  position: absolute;
+  left: 20px;
+  bottom: 16px;
+}
+
+.member-name {
+  font-size: 20px;
+  font-weight: black;
+}
+
+.member-profession {
+  font-weight: 14px;
+  color: var(--paragraph-color-common);
+}
+
+/* team-member */
+/* main-section */
+
+/* footer */
+footer {
+  padding: 40px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 115px;
+  background-color: var(--bg-color-secondary);
+}
+
+.footer-container {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+}
+
+.footer-header{
+  width: 50%;
+}
+
+.footer-logo{
+  margin-bottom: 20px;
+  font-size: 70px;
+}
+
+.footer-description{
+  color: var(--paragraph-color-common);
+  font-size: 14px;
+}
+
+.footer-items{
+  display: flex;
+  gap: 150px;
+}
+
+.item-header{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.items{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-name{
+  font-size: 23px;
+  color: var(--paragraph-color-common);
+}
+
+.copyrights{
+  border-top: 2px solid var(--paragraph-color-common);
+  text-align: center;
+}
+
+.copyright{
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--paragraph-color-common);
+}
+/* footer */
 
 /* media-query */
 
@@ -139,7 +426,63 @@ nav {
   .nav-item {
     padding: 6px;
   }
+
+  .banner {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .banner-header {
+    width: 90%;
+  }
+
+  .banner-imgs {
+    width: 80%;
+  }
+
+  .habit-header {
+    width: 100%;
+  }
+
+  .habit-header-tittle {
+    font-size: 32px;
+  }
+
+  .habits {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .run-section {
+    flex-direction: column;
+    gap: 31px;
+  }
+
+  .run-article {
+    width: 100%;
+    margin: auto 0;
+  }
+
+  .run-img {
+    width: 100%;
+  }
+
+  .trainings-exercises-imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-members {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-items{
+    flex-direction: column;
+  }
 }
+
 /* small-device */
 
 /* medium-device */
@@ -153,5 +496,43 @@ nav {
   .nav-list {
     gap: 4px;
   }
+
+  .banner {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .banner-header {
+    width: 80%;
+  }
+
+  .banner-imgs {
+    width: 80%;
+  }
+
+  .habit-header {
+    width: 80%;
+  }
+
+  .habit-header-tittle {
+    font-size: 38px;
+  }
+
+  .habits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .run-section {
+    gap: 68px;
+  }
+
+  .run-tittle {
+    font-size: 36px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
 }
+
 /* medium-device */
